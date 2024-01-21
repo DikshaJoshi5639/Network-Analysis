@@ -1,4 +1,18 @@
-# Social Network-Analysis
+# Social Network Analysis Project
+
+This project explores social network data to derive insights and patterns using R.
+
+## Overview
+
+The objective is to analyze the given social network dataset and understand the relationships between individuals, identifying key influencers, and visualizing the network structure.
+
+## Setup
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/social-network-analysis-project.git
+   cd social-network-analysis-project
+# Code
 #Social Network Analysis
 install.packages("igraph")
 library(igraph)
@@ -20,7 +34,6 @@ reciprocity(g1)
 closeness(g1,mode='all',weights=NA)
 betweenness(g1,directed=T,weights=NA)
 
-# Read data file
 
 data<- read.csv(file.choose(),header=T)
 y<-data.frame(data$first,data$second)
